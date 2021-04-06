@@ -1,0 +1,255 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #2f3542;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* No Scrollbar */
+    overflow: hidden;
+}
+
+.form-box {
+    width: 300px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+}
+
+.form-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3742fa;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+    width: 280px;
+    border-color: #ffffff;
+}
+
+.form-box button[type="submit"] {
+    border: 0;
+    background: #5352ed;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3742fa;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover {
+    background: none;
+}
+
+.script{
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+  }
+
+  a{
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    margin: 5px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #114357 60%, #f29492);
+    line-height: 1.6;
+  }
+  
+  .collapse-content {
+    width: 50vw;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  
+  .collapse {
+    background: #fff;
+  }
+  
+  .collapse a {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.9rem 1.8rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  .collapse a.instagram {
+    background: #db2e7d;
+  }
+  
+  .collapse a.twitter {
+    background: #1dabdd;
+  }
+  
+  .collapse a.dribbble {
+    background: #444;
+  }
+  
+  .collapse a.youtube {
+    background: #ff0000;
+  }
+  
+  .collapse a:before {
+    content: "";
+    border-top: 7px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+  
+  .inner-content {
+    padding: 1.8rem;
+  }
+  
+  .content {
+    max-height: 0em;
+    transition: 0.3s linear 0s;
+    overflow: hidden;
+  }
+  
+  .collapse + .collapse a {
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  
+  h3 {
+    margin-bottom: 15px;
+  }
+  
+  .collapse:target .content {
+    max-height: 15em;
+  }
+  
+  .collapse:target a:before {
+    transform: rotate(-90deg);
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .collapse-content {
+      width: 80vw;
+      margin: auto;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  @media (max-width: 425px) {
+    body {
+      line-height: 1.3;
+    }
+    .collapse-content {
+      width: 80vw;
+    }
+    .inner-content {
+      padding: 1.2rem;
+    }
+    .inner-content h3 {
+      margin-bottom: 0.3rem;
+    }
+  }
+  @media (max-width: 320px) {
+    body {
+      line-height: 1.3;
+    }
+    .collapse-content {
+      width: 80vw;
+    }
+    .inner-content {
+      padding: 0.8rem;
+    }
+    .inner-content h3 {
+      margin-bottom: 0.3rem;
+    }
+  }
+  
+  /* Estilos generales */
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul,ol,dl,p {
+  font-size: 1.5rem;
+}
+
+li, p {
+  line-height: 1.5;
+}
+
+/* Estilos para las listas de descripciones */
+
+
+dd, dt {
+  line-height: 1.5;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1.5rem;
+}
+
+p { margin-left: 2em; }
+h2 { margin-left: 3em }
+fieldset { margin-left: 5em; margin-right: 5em; margin-top: 2em;}
